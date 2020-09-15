@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huaheng.mobilewms">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".WMSApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/kezhuanzhai"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/kezhuanzhai"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".NetworkSettingActivity">
+        </activity>
+
+        <activity android:name=".activity.receipt.ReceiptListActivity">
+        </activity>
+
+        <activity android:name=".activity.receipt.ReceiptActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.receipt.AddReceiptActivity">
+        </activity>
+
+        <activity android:name=".activity.receipt.CallBoxActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.receipt.QuickReceiptActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.receipt.ReceiptDetailActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.receipt.ReceiptDetailInfoActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.receipt.ReceiptSupplementActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.receipt.EmptyInActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.receipt.pingku.PingkuReceiptActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.material.MaterialActivity">
+        </activity>
+
+        <activity android:name=".activity.material.AddMaterialActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+
+        <activity android:name=".activity.shipment.ShipmentCombinateActivity">
+        </activity>
+
+        <activity android:name=".activity.shipment.ShipmentActivity">
+        </activity>
+
+        <activity android:name=".activity.shipment.ShipmentDetailActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.shipment.ShipmentListActivity">
+        </activity>
+
+        <activity android:name=".activity.shipment.AddShipmentActivity">
+        </activity>
+
+
+        <activity android:name=".activity.shipment.ShipmentTaskActivity">
+        </activity>
+
+        <activity android:name=".activity.shipment.ShipmentTaskInfoActivity">
+        </activity>
+
+        <activity android:name=".activity.shipment.ShipmentDetailInfoActivity">
+        </activity>
+
+
+        <activity android:name=".activity.shipment.EmptyOutActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.shipment.pingku.PingkuShipmentActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.inventory.InventoryActivity">
+        </activity>
+
+        <activity android:name=".activity.inventory.InventoryDetailActivity">
+        </activity>
+
+        <activity android:name=".activity.inventory.InventoryTransactionActivity">
+        </activity>
+
+        <activity android:name=".activity.task.TaskActivity">
+        </activity>
+
+        <activity android:name=".activity.task.TaskInfoActivity">
+        </activity>
+
+        <activity android:name=".activity.printer.PrinterActivity">
+        </activity>
+
+        <activity android:name=".activity.printer.PrinterListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.printer.PrinterMaterialActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity android:name=".activity.SettingsActivity">
+        </activity>
+        <activity android:name=".activity.log.LogListActivity">
+        </activity>
+        <activity android:name=".activity.log.LogDetailActivity">
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.huaheng.mobilewms.fileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+
+</manifest>

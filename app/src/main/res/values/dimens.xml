@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lineHeight">35dp</dimen>
+    <dimen name="menuHeight">50dp</dimen>
+    <dimen name="smallFont">18sp</dimen>
+    <dimen name="normalFont">20sp</dimen>
+    <dimen name="bigFont">22sp</dimen>
+
+    <dimen name="extrasmallMargin">5dp</dimen>
+    <dimen name="smallMargin">10dp</dimen>
+    <dimen name="collectMargin">80dp</dimen>
+    <dimen name="collectTopMargiin">35dp</dimen>
+    <dimen name="contentBottomMargiin">56dp</dimen>
+    <dimen name="lineMargin">35dp</dimen>
+    <dimen name="ensureBtnHeight">50dp</dimen>
+    <dimen name="ensureLayoutHeight">55dp</dimen>
+    <dimen name="topLayoutHeight">63dp</dimen>
+    <dimen name="titleLayoutHeight">50dp</dimen>
+    <dimen name="menuLayoutHeight">50dp</dimen>
+    <dimen name="scanLayoutHeight">35dp</dimen>
+    <dimen name="contentLayoutHeight">70dp</dimen>
+    <dimen name="percentLayoutHeight">35dp</dimen>
+    <dimen name="scanImageSize">25dp</dimen>
+    <dimen name="deleteImageSize">35dp</dimen>
+    <dimen name="inputEditWidth">150dp</dimen>
+    <dimen name="inputBtnWidth">100dp</dimen>
+    <dimen name="divideHeight">1dp</dimen>
+    <dimen name="backgroundHeight">10dp</dimen>
+    <dimen name="collectLayoutHeight">70dp</dimen>
+    <dimen name="collectHeight">30dp</dimen>
+    <dimen name="collectWidth">40dp</dimen>
+</resources>

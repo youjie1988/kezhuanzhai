@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topLayoutHeight"
+        android:background="@color/colorPrimary">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scanLayoutHeight"
+            style="@style/scan_layout_style"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/scanImageSize"
+                android:layout_height="@dimen/scanImageSize"
+                android:layout_marginLeft="@dimen/smallMargin"
+                android:src="@mipmap/search"
+                android:layout_gravity="left|center_vertical"/>
+
+            <EditText
+                android:id="@+id/inputEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/lineMargin"
+                android:layout_marginRight="@dimen/lineMargin"
+                android:hint="@string/enter_barcode_library"
+                android:layout_gravity="center_vertical"
+                style="@style/scan_edit_style" />
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/topLayoutHeight"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ensureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ensureLayoutHeight"
+        android:gravity="center"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/ensureBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ensureBtnHeight"
+            android:text="@string/ensure"
+            style="@style/ensure_button_style"/>
+    </LinearLayout>
+
+</FrameLayout>

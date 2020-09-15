@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+
+    <com.huaheng.mobilewms.view.LineLayout
+        android:id="@+id/billLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/gray_text"/>
+
+    <com.huaheng.mobilewms.view.LineLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="31dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="62dp"
+        android:background="@color/gray_text"/>
+
+        <ListView
+            android:id="@+id/receipt_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/topLayoutHeight"
+            android:layout_marginBottom="@dimen/ensureLayoutHeight">
+        </ListView>
+
+    <LinearLayout
+        android:id="@+id/ensureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ensureLayoutHeight"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/ensureBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ensureBtnHeight"
+            android:text="@string/ensure"
+            style="@style/ensure_button_style"/>
+    </LinearLayout>
+
+</FrameLayout>
